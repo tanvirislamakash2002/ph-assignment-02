@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none
+}
+
+/* google font  */
+
+/* quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+/* header design start here  */
+
+.container{
+    max-width:1160px;
+    margin: 0px auto;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area{
+    display: flex;
+    align-items: center;
+}
+.header-menu-area ul{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-btn-area button{
+    background-color: orange;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+.banner-btn{
+    background-color: black;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 7px;
+}
