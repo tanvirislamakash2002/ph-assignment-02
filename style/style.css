@@ -5,28 +5,35 @@
     text-decoration: none
 }
 
+
+
 /* google font  */
 
 /* quicksand */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
 
-.quicksand-font {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+/* shared design here  */
+
+.curriculum, .stories{
+    background-image: url("../image/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 
 
-/* header design start here  */
+
+/* header section design start here  */
+
+.header-section, .curriculum, .stories{
+    display: flex;
+    justify-content: center;
+}
 
 .container{
-    max-width:1160px;
-    margin: 0px auto;
+    width: 1170px;
 }
 
 .header-top{
@@ -57,14 +64,22 @@
     align-items: center;
 }
 
+.banner-img img{
+    width: 100%;
+}
+
+
 .banner-btn{
     background-color: black;
     color: #fff;
     padding: 20px 30px;
     border-radius: 7px;
+    border: none;
 }
 
-/* curriculum design start here  */
+/* curriculum section design start here  */
+
+
 
 .curriculum-heading{
     text-align: center;
@@ -76,13 +91,73 @@
 .curriculum-box{
     text-align: center;
 }
+
 .curriculum-box button{
     background: none;
     border: none;
 }
-/* responsive header design start here  */
+
+/* Stories section design start here  */
+
+.stories h2{
+    text-align: center;
+}
+
+.stories-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.big-box{
+    width: 40%;
+}
+.small-box{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.b-stories-img img, .stories-img img{
+    width: 100%;
+}
+.stories-btn-area{
+    text-align: center;
+
+}
+.stories-btn-area button{
+    border: none;
+    color: #fff;
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 7px;
+}
+
+
+/* footer section design start here  */
+
+.footer-area{
+    margin: 0px auto;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: end;
+    background-color: skyblue;
+
+}
+
+.logo{
+    width: 10%;
+}
+
+
+/* responsive  design start here  */
 
 @media screen and (max-width:576px) {
+
+    /* responsive header */
     .banner{
         flex-direction: column-reverse;
     }
@@ -93,4 +168,25 @@
         text-align: center;
     }
     
+    /* responsive curriculum */
+    
+    .curriculum-box-container{
+        flex-direction: column;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    /* responsive stories  */
+
+    .big-box{
+        display: none;
+    }
+    .small-box{
+        justify-content: center;
+    }
+   
+        
 }
+
