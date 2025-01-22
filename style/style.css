@@ -6,10 +6,8 @@
 }
 
 
-
 /* google font  */
 
-/* quicksand */
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -18,12 +16,7 @@
 }
 
 
-
-
-
-
 /* shared design here  */
-
 
 .header-section, .curriculum, .stories{
     display: flex;
@@ -31,13 +24,11 @@
 }
 
 
-
-
 /* header section design start here  */
 
 
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0px 15px;
 }
 
@@ -80,6 +71,11 @@ font-size: 1.25rem;
     border-radius: 6px;
     color: #FFFFFF;
     padding: 10px 60px;
+    transition: .3s;
+}
+.nav-btn-area button:hover{
+    color: rgba(254, 163, 1, 1);
+    background-color: #FFFFFF;
 }
 .menu-icon{
     font-size: 2.1rem;
@@ -131,6 +127,11 @@ marquee{
     border: 2px solid rgba(17, 17, 17, 1);
     font-size: 1.25rem;
     font-weight: 700;
+    transition: .3s;
+}
+.banner-btn:hover{
+    color: rgba(17, 17, 17, 1);
+    background-color: #FFFFFF;
 }
 
 /* curriculum section design start here  */
@@ -187,6 +188,7 @@ marquee{
     font-size: .9rem;
     margin: 33px 0px;
     padding: 0px 40px;
+    color:#808080
 }
 .curriculum-box button{
     background: none;
@@ -195,6 +197,7 @@ marquee{
     margin-bottom: 48px;
     padding: 10px 40px;
     border-radius: 8px;
+    font-weight: 700;
     transition: .3s;
     
 }
@@ -322,12 +325,19 @@ marquee{
     font-weight: 700;
     font-size: 1.25rem;
     margin: 80px 0px 60px 0px;
+    transition: .3s;
+}
+.stories-btn-area button:hover{
+    background-color: transparent;
+    color: black;
 }
 
 .blue{background-color: #3CD8E8 }
 .violet{background-color:#5D58F0 ;}
 
 .hide-box{display: none;}
+
+
 /* footer section design start here  */
 
 .footer-area{
@@ -477,11 +487,11 @@ marquee{
     }
     .header-top{
         padding-bottom: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
         border-bottom: 1px solid rgba(254, 163, 1, 1);
     }
     marquee{
-        display: none;
+        margin-bottom: 30px;
     }
     .banner-content{
         text-align: center;
@@ -531,6 +541,10 @@ marquee{
         justify-content: center;
         width: 100%;
         gap: 10px;
+    }
+    .small-box h2 {
+        margin: 5px 38px 23px 37px;
+        line-height: 20px;
     }
     .s-box h2{
         font-size: .9rem;
