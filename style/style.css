@@ -72,6 +72,8 @@ font-size: 1.25rem;
     color: #FFFFFF;
     padding: 10px 60px;
     transition: .3s;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
 .nav-btn-area button:hover{
     color: rgba(254, 163, 1, 1);
