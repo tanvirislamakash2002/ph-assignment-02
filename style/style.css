@@ -9,7 +9,7 @@
 
 /* google font  */
 
-
+/* quicksand */
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -18,7 +18,7 @@
 }
 
 
-/* quicksand */
+
 
 
 
@@ -38,12 +38,14 @@
 
 .container{
     width: 1170px;
+    margin: 0px 15px;
 }
 
 .header-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
 }
 
 .logo-area{
@@ -79,7 +81,19 @@ font-size: 1.25rem;
     color: #FFFFFF;
     padding: 10px 60px;
 }
-
+.menu-icon{
+    font-size: 2.1rem;
+    display: none;
+}
+marquee{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: rgba(1, 172, 253, 1);
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 16px;
+}
 .banner{
     display: flex;
     align-items: center;
@@ -172,6 +186,7 @@ font-size: 1.25rem;
 .curriculum-box p{
     font-size: .9rem;
     margin: 33px 0px;
+    padding: 0px 40px;
 }
 .curriculum-box button{
     background: none;
@@ -203,6 +218,16 @@ font-size: 1.25rem;
 #middle button:hover{
     background:#EEE1FF;
     color: #8700FF
+}
+.arrow{
+    text-align: center;
+}
+.arrow i{
+    background-color: rgba(254, 163, 1, 1);
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    padding: 20px 25px;
+    border-radius:50%;
 }
 
 /* Stories section design start here  */
@@ -302,47 +327,193 @@ font-size: 1.25rem;
 .blue{background-color: #3CD8E8 }
 .violet{background-color:#5D58F0 ;}
 
-
+.hide-box{display: none;}
 /* footer section design start here  */
 
 .footer-area{
-    margin: 0px auto;
-}
-
-.footer-container{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     background-color: #01ACFD;
 
 }
 
+.footer-container{
+ 
+    display: grid;
+    grid-template-columns:  2fr repeat(2, 1fr);    
+    margin-top: 123px;
+    margin-bottom: 175px;
+    gap: 100px;
+}
 .logo{
-    width: 10%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.logo img{
+    width: 20%;
+}
+.logo h3{
+    font-weight: 700;
+    font-size:2.6rem;
+    color: #FFFFFF;
+}
+
+.footer-content p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+
+.footer-menu h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.footer-menu-area ul li{
+    margin: 20px 20px 20px 0px;
+}
+.footer-menu-area ul li a{
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.footer-link h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.links{
+    display: flex;
+    gap: 10px;
+    margin-top:32px ;
 }
 
 
 /* responsive  design start here  */
 
+
+/* responsive for medium device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    html{
+        font-size: 12px;
+    }
+
+    .header-menu-area ul{
+        gap: 12px;
+    }
+
+    .nav-btn-area button{
+        padding: 5px 20px;
+    }
+
+    .banner-content h1{
+        font-size: 2.3rem; ;
+    }
+    .banner-content{
+        width:55% ;
+        
+    }
+    .banner-img{
+        width: 45%;
+    }
+
+    .curriculum-box-container{
+        gap: 15px;
+    }
+
+    .curriculum-box img{
+        margin: 30px 0px 16px 0px;
+    }
+
+    .curriculum-box h3{
+        margin-top: 15px;
+    }
+
+    .curriculum-box p{
+        margin: 10px;
+        padding: 0px 10px;
+    }
+    .curriculum-box button{
+        margin: 20px;
+        padding: 5px 20px;
+    }
+
+    .stories-box-container{
+        display: block;
+    }
+    
+    .big-box, .small-box{
+        width: 100%;
+    }
+    .hide-box{display: block;}
+
+    .footer-container{
+ 
+        gap: 60px;
+    }
+}
+
+
+
+/* responsive for small device */
+
 @media screen and (max-width:576px) {
+
+    html{
+        font-size: 14px;
+    }
 
     /* responsive header */
     .banner{
         flex-direction: column-reverse;
+        gap:20px
     }
     .logo-area span, .header-menu-area, .nav-btn-area{
         display: none;
     }
+    .header-top{
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
+    }
+    marquee{
+        display: none;
+    }
     .banner-content{
         text-align: center;
+        width:100%;
+        margin: 0px 0px 20px 0px;
     }
+    .banner-content h1{
+        font-size: 2.5rem;
+    }
+   
     .banner-img{
-        width: 90%;
+        width: 100%;
+    }
+    .menu-icon{
+       display: block; 
     }
     
     /* responsive curriculum */
     
     .curriculum-box-container{
         flex-direction: column;
+        margin: 25px 0px 20px 0px;
+        gap: 10px;
+    }
+    .curriculum-heading{
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+    
+    .curriculum-box p{
+        margin: 10px;
+        padding: 0px 70px;
     }
 
     .arrow{
@@ -350,12 +521,36 @@ font-size: 1.25rem;
     }
 
     /* responsive stories  */
-
+    .stories h1 {
+        margin: 60px 0px 30px 0px;
+    }
     .big-box{
         display: none;
     }
     .small-box{
         justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .s-box h2{
+        font-size: .9rem;
+    }
+    .stories-btn-area button {
+        margin: 20px 0px 40px 0px;
+    }
+    .hide-box{display: block;}
+
+    /* responsive footer  */
+
+    .footer-container{
+        display: block;
+        margin: 60px 10px;
+    }
+    .footer-content p{
+        margin-bottom: 32px;
+    }
+    .footer-link h3{
+        margin-top: 30px;
     }
    
         
